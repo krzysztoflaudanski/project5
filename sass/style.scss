@@ -1,6 +1,7 @@
 $color-one: #ffffff;
 $color-two: #ecca0a;
 $color-three: #e2d8d8;
+$color-four: #000000;
 
 $font-one:'Roboto', sans-serif;
 $font-two:'Inconsolata', monospace;
@@ -38,7 +39,6 @@ h5{
     font-weight: 900;
     margin: 15px;
 }
-
 
 //navigation//
 
@@ -165,10 +165,29 @@ h5{
     }
 }
 
-//media//
+//footer//
 
-@media (max-width: 767px) {
-    h1 {
-        font-size: 20px;
+.page-footer {
+    .container{
+        padding: 32px 0;
+    }
+    ul {
+        list-style-type: none;
+        margin: auto;
+    
+    }
+    li {
+        display: inline;
+        padding: 0 0 0 24px;
+        font-size: 0;
+    }
+    i {
+        margin: 10px 0 0;
+        color: $color-one;
+        background: $color-four;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 25px;
+        min-width:45px;
     }
 }
