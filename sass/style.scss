@@ -1,10 +1,10 @@
 $color-one: #ffffff;
 $color-two: #ecca0a;
-$color-three: #e2d8d8;
+$color-three: #edecec;
 $color-four: #000000;
 
-$font-one:'Roboto', sans-serif;
-$font-two:'Inconsolata', monospace;
+$font-one:'Great Vibes', cursive;
+
 
 //global//
 
@@ -43,6 +43,10 @@ h5{
 //navigation//
 
 .navigation {
+    a {
+        text-decoration:none;
+        color: $color-one;
+    }
     img {
         object-fit: cover;
         width: 100%;
@@ -68,6 +72,8 @@ h5{
         color: $color-two;
         padding: 0 0 0 100px;
         font-size: 30px;
+        font-family: $font-one;
+        font-style: oblique;
     }
     .nav {
         flex: 0 0 70%;
@@ -79,7 +85,6 @@ h5{
     }
     li {
         display: inline-block;
-        color: $color-one;
         padding: 10px 20px 0 0;
     }
     .nav-title {
@@ -188,6 +193,11 @@ h5{
         padding: 10px;
         border-radius: 50%;
         font-size: 25px;
-        min-width:45px;
+        width:45px;
+        height:45px;
+        text-align: center;
+    }
+    i:hover {
+        transform: scale(1.5, 1.5);
     }
 }
